@@ -19,7 +19,7 @@ def create_job(job_name, arg1, arg2):
     # Create the Job with a unique name
     while True:
         try:
-            batchv1.create_namespaced_job(namespace="dev", body=job)
+            batchv1.create_namespaced_job(namespace="job-function", body=job)
             print("Job created successfully with name: {}".format(job_metadata.name))
             break
         except client.rest.ApiException as e:
