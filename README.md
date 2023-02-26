@@ -5,10 +5,10 @@ Trigger a k8s job via an API call with some body parameters to pass values to th
 ```
 docker build -t api-endpoint:v2.0.1 .
 ```
-## Deploy api-service to kubernetes cluster
-update image tag which you just built in deployment file 
+## Deploy api-service deployment
+update image tag which you just built in deployment file and deploy in particular namespace
 ```
-kubectl create -f api-service.yaml
+kubectl create -f api-service.yaml 
 ```
 ## Grant job create RBAC access 
 grant job create rbac access to the default service account in particular namespace
