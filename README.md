@@ -5,7 +5,7 @@ Trigger a k8s job via an API call with some body parameters to pass values to th
 ```
 docker build -t api-endpoint:v2.0.1 .
 ```
-## Deploy api-service deployment
+## Deploy api-service to kubernetes cluster
 update image tag which you just built in deployment file 
 ```
 kubectl create -f api-service.yaml
